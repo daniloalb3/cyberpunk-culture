@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
 *{
     box-sizing: border-box;
@@ -8,15 +9,83 @@ body {
 
 h2 {
     text-align: center;
+    font-family: 'Black Ops One', cursive;
 }
 
 
 .topo { text-align: center; color: white; padding: 25px;}
 
-.menu { background-color: rgba(110, 82, 161, 0.6); padding: 15px; font-size: large;   overflow:  hidden; width:75%; display: flex inline; 
- margin-top: 100px; margin-bottom: 125px; border: 1px; border-radius: 30px; }
+.dp-menu ul {
+  list-style-type:none;
+  padding: 0px;
+  margin-bottom: 200px;
+  font-family: 'Black Ops One', cursive;
+  font-size: 16px;
+  
+}
 
-.menu a {color: white;  float: center; ; text-decoration: none; text-align: center;  width: calc(1/6);  flex: 1; }
+.dp-menu ul {
+  background-color:  rgba(0, 0, 0, 0.2);
+}
+
+.lip {
+ margin-right: 50px;
+
+ }
+
+ .lip:last-child {
+ margin-right: 0px;
+
+ }
+
+.dp-menu ul li {
+  display: inline;
+  position: relative;
+}
+
+.dp-menu ul li a{
+  color:  white;
+  text-decoration: none;
+  display: inline-block;
+  padding:10px;
+  transition: background .3s;
+  
+}
+
+.dp-menu ul li a:hover{
+  background-color:  rgb(255, 196, 0);
+ 
+  
+}
+
+/*sub menu*/
+
+.dp-menu ul ul {
+  display: none;
+  position: absolute;
+  left: 0;
+}
+
+.dp-menu ul li:hover ul{
+  display: block;
+
+}
+
+.dp-menu ul ul  {
+width: 150px;
+}
+
+.dp-menu ul ul li a {
+display: block;
+}
+
+
+
+
+
+
+
+
 
 .slider {margin:auto; width: 800px; height: 450px; overflow: hidden; margin-bottom: 250px;}
 
@@ -65,7 +134,7 @@ h2 {
 
 .alinha-dir {float:right; }
 
-.divisao { width: 100%; height: 50%; 
+.divisao { width: 100%; height: 50%; padding: 100px;
 background-color: #5c08f8; background-image: url("../img/iron-texture.jpg");
 background-size: cover; margin-top: 751px; }
 
